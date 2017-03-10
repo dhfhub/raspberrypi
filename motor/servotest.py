@@ -1,6 +1,16 @@
 ﻿import wiringpi
 
 #servo は VS-S092J
+#sudo python3 servotest.py
+#1.wiringpi2のインストール
+#$ sudo apt-get update
+#$ sudo apt-get install python3-dev python3-pip
+#$ sudo pip3 install wiringpi2
+#2.wiringPi2-Pythonのインストール
+#$ git clone https://github.com/Gadgetoid/WiringPi2-Python.git
+#cd WiringPi2-Python
+#$ sudo python3 setup.py install
+
 
 PWM_PIN = 18   # GPIOの18番ピン
 DUTY_MAX = 115 # 90°の時
