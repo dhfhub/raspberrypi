@@ -3,7 +3,6 @@
 #sudo python3 -B PWDServo_Test.py
 
 servo1 = PWDServo.PWDServo(18)
-
 servo1.goHome()
 
 for deg in range(0, 90, 1):  # 0°から90°まで動かす
