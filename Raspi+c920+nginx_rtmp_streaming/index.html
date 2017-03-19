@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+<script type="text/javascript" src="http://192.168.0.10/jwplayer/jwplayer.js"></script>
+-->
+<script type="text/javascript" src="./jwplayer/jwplayer.js"></script>
+<script type=”text/javascript”>jwplayer.key="M3MuDEg+S+keZ3ryBjxR2cRrRxMh7P/F6jKYaw==";</script>
+<title>Cam</title>
+<style>
+    body {
+        width: 35em;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+        #stream {
+                width: 100%;
+                height: 100%;
+        }
+</style>
+</head>
+<body>
+<h1>Cam</h1>
+<div id="stream">Loading...</div>
+<script type="text/javascript">
+    jwplayer.key="M3MuDEg+S+keZ3ryBjxR2cRrRxMh7P/F6jKYaw==";
+    jwplayer("stream").setup({
+        file: "rtmp://192.168.0.10:1935/hls/movie"
+    });
+</script>
+<!--
+        file: "rtmp://192.168.0.10:1935/hls/movie"
+-->
+
+<!--
+<script type="text/javascript">
+    jwplayer.key="M3MuDEg+S+keZ3ryBjxR2cRrRxMh7P/F6jKYaw==";
+    jwplayer("stream").setup({
+        playlist: [{
+            sources: [{
+                file:"rtmp://127.0.0.1:1935/hls/movie"
+            }]
+        }],
+    width: 1280,
+    height: 720,
+    primary: "flash"
+    });
+</script>
+-->
+<!--
+<div id="myElement">Loading file...</div>
+<script type="text/javascript">
+    jwplayer.key="M3MuDEg+S+keZ3ryBjxR2cRrRxMh7P/F6jKYaw==";
+    jwplayer("myElement").setup({
+        file: "./Share/20170204-skeltontest.mp4",
+        image: "./Share/MGS.jpg"
+    });
+</script>
+-->
+
+</body>
+</html>
+
